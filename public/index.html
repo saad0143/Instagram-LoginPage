@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Instagram</title>
+</head>
+<body class="">
+    
+   <div class="flex flex-col md:flex-row"> 
+        
+        <div class="w-full md:w-2/4 mt-10 md:flex md:justify-end">
+            <img src="img/iphone.png" alt="" class="hidden md:block"> 
+        </div>
+         
+        <!-- right-side -->
+        <div class="ml-6 w-full md:w-1/4 mt-14">
+            
+            <!-- container -->
+            <div class="bg-white border border-gray-300 rounded-box
+                             flex flex-col font-normal text-base py-2 relative">
+                <div class="flex justify-center">
+
+                    <img class="mt-10" src="img/logo.png" alt="">
+    
+                </div>
+
+                <form class="p-3">
+                    <input type="text" name="username" placeholder="Phone, username, or email" 
+                    class="w-full p-3 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                    <input type="password" name="passwordUser" placeholder="Password" 
+                    class="w-full p-3 border border-gray-300 rounded mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                    <button type="button" 
+                    class="w-full py-2 bg-blue-400 text-white font-semibold rounded cursor-pointer">
+
+                    Login
+                    </button>
+                    
+                    <div class="mt-4 text-gray-600 text-sm flex justify-center items-center">
+                        <div class="w-16 h-px bg-gray-300"></div>
+                        <span class="mx-2">OR</span>
+                        <div class="w-16 h-px bg-gray-300"></div>
+                    </div>
+                    <a href="https://www.facebook.com/login/" target="_blank" rel="noopener noreferrer" class="login-facebook text-blue-700 font-semibold text-sm flex justify-center items-center mt-3">
+                        <img src="img/fb.png" alt="Facebook icon" class="w-5 h-5 mr-2">
+                        Log in with Facebook
+                    </a>
+                    
+                    <a href="https://www.instagram.com/accounts/password/reset/" target="" class="forgot-pass text-blue-700 text-xs block text-center mt-2">Forgot password?</a>
+
+                </form>
+    
+            </div>
+            <!-- signup -->
+            <div class="bg-white border border-gray-300 rounded-box
+                             flex flex-col font-normal text-base mt-5 py-4 relative">
+                
+                <section class="flex justify-center">
+                     <p class="text-sm">Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/" class="text-blue-500 font-semibold" target="_blank" rel="noopener noreferrer">Sign up</a></p>
+                 </section>
+                  
+            </div>
+            
+            <div>
+                <div class="flex justify-center p-4">
+                    <p class="text-s">Get the app.</p>
+                </div>
+              
+                <div class="flex justify-center">
+                    <a href="https://apps.apple.com/app/instagram/id389801252" target="_blank" rel="noopener noreferrer">
+                        <img src="img/apple-button.png" alt="Instagram on App Store" class="w-36">
+                    </a>
+                    <a href="#" onclick="openMicrosoftStore()" class="ml-3">
+                        <img src="img/googleplay-button.png" alt="Instagram on Microsoft Store" class="w-36">
+                    </a>
+                </div>
+                
+                <script>
+                function openMicrosoftStore() {
+                    alert("To download Instagram from the Microsoft Store, please open the Microsoft Store app on your device.");
+                }
+                </script>
+               
+            </div>
+           
+        </div>
+
+
+    </div>
+    
+    
+    <footer class="footer text-center w-full mx-auto text-sm text-gray-600">
+        <nav class="py-6">
+            <a href="https://about.instagram.com/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">About</a>
+            <a href="https://about.instagram.com/blog/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Blog</a>
+            <a href="https://www.instagram.com/about/jobs/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Jobs</a>
+            <a href="https://help.instagram.com/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Help</a>
+            <a href="https://developers.facebook.com/docs/instagram" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">API</a>
+            <a href="https://www.instagram.com/legal/privacy/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Privacy</a>
+            <a href="https://www.instagram.com/legal/terms/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Terms</a>
+            <a href="https://www.instagram.com/directory/featured/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Top Accounts</a>
+            <a href="https://www.instagram.com/explore/tags/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Hashtags</a>
+            <a href="https://www.instagram.com/explore/locations/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Locations</a>
+            <a href="https://www.instagram.com/lite/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Instagram Lite</a>
+            <a href="https://www.instagram.com/addressbook/contacts/" class="inline-block mx-2 text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">Non-User Contacts Sync</a>
+        </nav>
+        <div class="copy">
+            <span>&copy; 2023 Instagram-clone made by Saad</span>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
